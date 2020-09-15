@@ -64,8 +64,7 @@ class Cppn:
 
 
 
-if __name__=="__main__":
-    print("Unit_Test")
+def output():
     M = Cppn()
     r = M()
     plt.imshow(r)

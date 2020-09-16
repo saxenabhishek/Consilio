@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 
 <body>
@@ -31,11 +32,13 @@
       <br><br>
       <h1 class="header center orange-text">Consilio</h1>
       <div class="row center">
-        <img src="{{ url_for('static', filename=graph) }}" align="middle" />
-        <h5 class="header col s12 light">Consilio (latin;design) helps you in making attractive designs, patterns or abstract structures for your new art project<br>
-          A project made by Aryan, Abhishek and Anoushka.
-        <br>
-        </h5>
+          <img src="{{ url_for('static', filename=graph) }}" class="img-fluid" />
+        <span>
+          <h5 class="header col s12 light">Consilio (latin;design) helps you in making attractive designs, patterns or abstract structures for your new art project<br>
+            A project made by Aryan, Abhishek and Anoushka.
+          <br>
+          </h5>
+        </span>
       </div>
 
               <div class="row">

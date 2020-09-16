@@ -12,7 +12,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     M = Cppn()
-    r = M(450,600,10)
+    r = M(1024,1920,10)
     im = Image.fromarray(r)
 
     new_graph_name = "graph" + str(time.time()) + ".png"

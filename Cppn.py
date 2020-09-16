@@ -16,15 +16,18 @@ class Cppn_model(torch.nn.Module):
         super(Cppn_model, self).__init__()
         self.lay=[]
         self.input_linear = torch.nn.Linear(2,8)
-        for i in range(2):
+        for i in range(1):
             self.lay.append(torch.nn.Linear(8,8))
         self.output = torch.nn.Linear(8,3)
 
     def forward(self, x):
         x = self.input_linear(x)
+        rlink = x
         for i in self.lay:
-            x = F.elu(x)
+            x = F.hardtanh(x)
+            #x = torch.tanh(x)
             x = i(x)
+            x = x + rlink
         x = self.output(x)
         x = torch.tanh(x)
         return x
@@ -67,8 +70,7 @@ class Cppn:
 
 def output():
     M = Cppn()
-    r = M(10,10,zoom=10)
-    print(r)
+    r = M(1024,1024,zoom=10)
     plt.imshow(r)
     plt.show()
 

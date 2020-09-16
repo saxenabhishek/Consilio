@@ -13,15 +13,15 @@
 
 <body>
   <nav class="orange lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
+    <div class="nav-wrapper container">
+      <!--<ul class="right hide-on-med-and-down">
         <li><a href="#">CPPN</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
         <li><a href="#">CPPN</a></li>
       </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>-->
     </div>
   </nav>
 
@@ -31,52 +31,56 @@
       <br><br>
       <h1 class="header center orange-text">Consilio</h1>
       <div class="row center">
-        <img src="{{ url_for('static', filename=graph) }}" align="middle" />
-        <h5 class="header col s12 light">Consilio (latin;design) helps you in making attractive designs, patterns or abstract structures for your new art project<br>
+        
+        <h5 class="header col s12 light">Consilio (latin;design) helps you in making attractive designs, patterns or abstract <br>structures for your new art project.<br>
           A project made by Aryan, Abhishek and Anoushka.
         <br>
         </h5>
       </div>
 
               <div class="row">
-    <form action='/generate' method="post" class="col s12">
-      <div class="row">
-        <div class="input-field col s4">
-            <label for="first_name"><b>x</b></label>
-            <br>
-          <input placeholder="x" id="first_name" name="y" type="text" class="validate">
-        </div>
-        <div class="input-field col s4">
-
-          <label for="last_name"><b>y</b></label>
-            <br>
-          <input id="last_name" name="y" placeholder="y"  type="text" class="validate">
-
-        </div>
-
-        <div class="input-field col s4">
-            <label for="_name"><b>z</b></label>
-            <br>
-          <input id="_name" name="z" placeholder="z %" type="text" class="validate">
-
-        </div>
-
-      </div>
 
       <div class="row center">
 
-          <button type="submit" class="btn-large waves-effect waves-light orange">Generate Pattern</button>
+          <button onClick="window.location.reload();" type="submit" class="btn-large waves-effect waves-light orange">Generate Pattern</button><br><br><br>
+          <img class="responsive-img" src="{{ url_for('static', filename=graph) }}" align="center" />
+          
       </div>
-    </form>
+      <div class="row">
+        <div class="col s12 m6">
+        <div class="card orange center">
+          <div class="card-content white-text">
+            <span class="card-title">CPPN</span>
+            <p>Compositional pattern-producing networks are a variation of artificial neural 
+              networks that have an architecture whose evolution is guided by genetic algorithms. 
+              While ANNs often contain only sigmoid functions and sometimes Gaussian functions, 
+              CPPNs can include both types of functions and many others.</p>
+          </div>
+          <div class="card-action white white-text">
+            <a href="https://www.researchgate.net/publication/220286080_Compositional_pattern_producing_networks_A_novel_abstraction_of_development">Link to documentation</a>
+          </div>
+          
+        </div>
       </div>
+      <div class="col s12 m6">
+        <div class="card orange center">
+          <div class="card-content white-text">
+            <span class="card-title">Neural Style Transfer</span>
+            <p>Neural style transfer is an optimization technique used to take two images—a content 
+              image and a style reference image (such as an artwork by a famous painter)—and blend them 
+              together so the output image looks like the content image, but “painted” in the style of the 
+              style reference image.</p></div>
+          <div class="card-action white white-text">
+            <a href="https://arxiv.org/abs/1508.06576" target="blank">Link to the paper</a>
+          </div>
+          
+        </div>
 
-      <br>
-        {{pred}}<br>
-
-    </div>
+      </div>
+         </div>
   </div>
 
-
+    
     <br><br>
   </div>
   </div>>
@@ -93,7 +97,7 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="orange-text text-lighten-3" >Abhishek, Anoushka and Aryan</a>
+      Made by <a class="grey-text text-lighten-3" >Aryan, Anoushka and Abhishek</a>
       </div>
     </div>
   </footer>
@@ -101,8 +105,6 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src=".js/materialize.js"></script>
-  <script src="js/init.js"></script>
 
   </body>
 </html>

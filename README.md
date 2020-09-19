@@ -12,7 +12,7 @@ $ pip install -r requirements.txt
 $ python app.py
 ```
 ## Tutorial
-Use our random pattern generator (for now) to generate unique patterns and download them. No need to worry about copyrights cause we work Stochastically :)
+Use our random pattern generator (for now) to generate unique patterns and download them. No need to worry about copyrights cause we work Stochastically :)</br> </br>
 ![Tutorial](static/images/tutorial.gif "tutorial")
 ## Examples
 ![Tshirt](static/images/tshirt.png)</br>

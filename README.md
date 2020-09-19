@@ -14,6 +14,12 @@ $ python app.py
 ## Tutorial
 Use our random pattern generator (for now) to generate unique patterns and download them. No need to worry about copyrights cause we work Stochastically :)
 ![Tutorial](static/images/tutorial.gif "tutorial")
+## Examples
+![Tshirt](static/images/tshirt.png)</br>
+![Instagram Post] (static/images/post.png) 
 ## To do
+- [ ] Provide more complex patterns by tweaking CPPN.py
+- [ ] Provide a light Neural Style Transfer program to further add the features (already in works)
+- [ ] Deploy
 ---
 By: [Anoushka Halder](https://github.com/anoushka-h) , [Abhishek Saxena](https://github.com/saxenabhishek) and [Aryan Kargwal](https://github.com/aryankargwal)

@@ -16,7 +16,8 @@ Use our random pattern generator (for now) to generate unique patterns and downl
 ![Tutorial](static/images/tutorial.gif "tutorial")
 ## Examples
 ![Tshirt](static/images/tshirt.png)</br>
-![Instagram Post] (static/images/post.png) 
+![Instagram Post](static/images/post.png)</br>
+![Desktop](static/images/wallpaper.png)
 ## To do
 - [ ] Provide more complex patterns by tweaking CPPN.py
 - [ ] Provide a light Neural Style Transfer program to further add the features (already in works)

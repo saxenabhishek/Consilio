@@ -14,18 +14,11 @@
 <body>
   <nav class="orange lighten-1" role="navigation">
     <div class="nav-wrapper container">
-      <!--<ul class="right hide-on-med-and-down">
-        <li><a href="#">CPPN</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">CPPN</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>-->
+      
     </div>
   </nav>
 
-
+<!--Title and intro to website-->
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
@@ -39,62 +32,74 @@
       </div>
 
               <div class="row">
-
+<!--Generation and download of patterns-->
       <div class="row center">
 
           <button onClick="window.location.reload();" type="submit" class="btn-large waves-effect waves-light orange">Generate Pattern</button><br><br><br>
-          <img class="responsive-img" src="{{ url_for('static', filename=graph) }}" align="center" />
-          
+          <img class="responsive-img" src="{{ url_for('static', filename=graph) }}" align="center" /><br><br><br>
+          <a href="static/graph.png" download><button class="btn-large waves-effect waves-light orange">Download Image</button></a><br>
       </div>
+  <!--About CPPN-->
       <div class="row">
-        <div class="col s12 m6">
-        <div class="card orange center">
-          <div class="card-content white-text">
-            <span class="card-title">CPPN</span>
-            <p>Compositional pattern-producing networks are a variation of artificial neural 
-              networks that have an architecture whose evolution is guided by genetic algorithms. 
-              While ANNs often contain only sigmoid functions and sometimes Gaussian functions, 
-              CPPNs can include both types of functions and many others.</p>
+        <div class="col s6 offset-s3">
+          <div class="card orange center">
+            <div class="card-content white-text">
+              <span class="card-title">CPPN</span>
+              <p>Compositional pattern-producing networks are a variation of artificial neural 
+                networks that have an architecture whose evolution is guided by genetic algorithms. 
+                While ANNs often contain only sigmoid functions and sometimes Gaussian functions, 
+                CPPNs can include both types of functions and many others.</p>
+            </div>
+            <div class="card-action white white-text">
+              <a href="https://www.researchgate.net/publication/220286080_Compositional_pattern_producing_networks_A_novel_abstraction_of_development">Link to documentation</a>
+            </div>
+            
           </div>
-          <div class="card-action white white-text">
-            <a href="https://www.researchgate.net/publication/220286080_Compositional_pattern_producing_networks_A_novel_abstraction_of_development">Link to documentation</a>
-          </div>
-          
         </div>
-      </div>
-      <div class="col s12 m6">
-        <div class="card orange center">
-          <div class="card-content white-text">
-            <span class="card-title">Neural Style Transfer</span>
-            <p>Neural style transfer is an optimization technique used to take two images—a content 
-              image and a style reference image (such as an artwork by a famous painter)—and blend them 
-              together so the output image looks like the content image, but “painted” in the style of the 
-              style reference image.</p></div>
-          <div class="card-action white white-text">
-            <a href="https://arxiv.org/abs/1508.06576" target="blank">Link to the paper</a>
-          </div>
-          
+           </div>
+  </div>
+  
+  <!--Uses-->
+  <h3 class="center orange-text">Sample Usage</h1>
+  <div class="row">
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="static/images/tshirt.png">
         </div>
-
-      </div>
-         </div>
-  </div>
-
-    
-    <br><br>
-  </div>
-  </div>>
-
-  <footer class="page-footer orange">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project.</p>
-
-
+        <div class="card-title orange white-text center">
+          Tshirt
         </div>
       </div>
     </div>
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="static/images/post.png">
+        </div>
+        <div class="card-title orange white-text center">
+          Instagram Post
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="static/images/wallpaper.png">
+        </div>
+        <div class="card-title orange white-text center">
+          Desktop Wallpaper
+        </div>
+      </div>
+    </div>
+  </div>
+    <br><br>
+  </div>
+  
+            
+</div>
+<!--footer-->
+  <footer class="page-footer orange">
     <div class="footer-copyright">
       <div class="container">
       Made by <a class="grey-text text-lighten-3" >Aryan, Anoushka and Abhishek</a>
@@ -105,6 +110,5 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-
   </body>
 </html>

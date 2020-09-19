@@ -19,14 +19,18 @@ def home():
 
     new_graph_name = "graph" + ".png"
 
-    for filename in os.listdir('static/'):
-        if filename.startswith('graph'):  # not to remove other images
-            os.remove('static/' + filename)
+    saveloc = 'static/Dyaimages/'
+
+    new_graph_name = "Res" + str(time.time()) + ".png"
+
+    for filename in os.listdir(saveloc):
+        if filename.startswith('Res'):  # not to remove other images
+            os.remove(saveloc + filename)
     
 
-    im = im.save('static/' + new_graph_name) 
+    im = im.save(saveloc + new_graph_name) 
 
-    return render_template("index.html",graph=new_graph_name)
+    return render_template("index.html",graph= "/Dyaimages/"+new_graph_name)
 
 
 

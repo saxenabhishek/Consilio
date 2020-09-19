@@ -10,13 +10,14 @@ from PIL import Image
 app = Flask(__name__)
 M = Cppn()
 
+#For running the model saving a static file of the generated image
 @app.route('/')
 def home(h=450,w=600,z=10):
     r = M(h,w,z)
     
     im = Image.fromarray(r)
 
-    new_graph_name = "Res" + str(time.time()) + ".png"
+    new_graph_name = "graph" + ".png"
 
     saveloc = 'static/Dyaimages/'
 

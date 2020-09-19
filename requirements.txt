@@ -1,0 +1,5 @@
+matplotlib==3.2.2
+Flask==1.1.2
+torch==1.6.0
+numpy==1.18.5
+Pillow==7.2.0

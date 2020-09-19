@@ -15,6 +15,7 @@ $ python app.py
 Use our random pattern generator (for now) to generate unique patterns and download them. No need to worry about copyrights cause we work Stochastically :)</br> </br>
 ![Tutorial](static/images/tutorial.gif "tutorial")
 ## Examples
+Using our own generated patterns in designs.</br> </br>
 ![Tshirt](static/images/tshirt.png)</br>
 ![Instagram Post](static/images/post.png)</br>
 ![Desktop](static/images/wallpaper.png)

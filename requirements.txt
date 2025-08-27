@@ -1,5 +1,5 @@
 matplotlib==3.2.2
 Flask==1.1.2
-torch==1.6.0
+torch==2.8.0
 numpy==1.18.5
 Pillow==10.3.0
